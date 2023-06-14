@@ -3,18 +3,26 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/src/style.css">
     <title>todo</title>
   </head>
   <body>
-    <div class="">
+    <div class="inputArea">
       <input type="text" placeholder="todoを入力" />
       <button>追加</button>
     </div>
-    <div class="">
-      <p>未完了のtodo</p>
+    <div class="incompleteArea">
+      <p class="title">未完了のtodo</p>
       <ul>
         <li>
-          <div>
+          <div class="list-row">
+            <p>todoです</p>
+            <button>完了</button>
+            <button>削除</button>
+          </div>
+        </li>
+        <li>
+          <div class="list-row">
             <p>todoです</p>
             <button>完了</button>
             <button>削除</button>
@@ -22,11 +30,11 @@
         </li>
       </ul>
     </div>
-    <div class="">
-      <p>完了したtodo</p>
+    <div class="completeArea">
+      <p class="title">完了したtodo</p>
       <ul>
         <li>
-          <div>
+          <div class="list-row">
             <p>todoでした</p>
             <button>戻す</button>
           </div>
